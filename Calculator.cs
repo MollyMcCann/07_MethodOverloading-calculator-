@@ -109,7 +109,7 @@ namespace Calculator
             Console.WriteLine();
         }
 
-        private static void GetNumbers(out int num1, out int num2)
+        private static void GetNumbers(out int num1, out int num2) 
         {
             Console.WriteLine();
             Console.Write("\nPlease enter your first number: ");
