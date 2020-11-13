@@ -101,8 +101,8 @@ namespace Calculator
             Console.WriteLine("What do you want to do?");
             Console.WriteLine();
             Console.WriteLine("\t1. Add two numbers.");
-            Console.WriteLine("\t3. Multiple two numbers.");
-            Console.WriteLine("\t6. Add THREE numbers.");
+            Console.WriteLine("\t2. Multiple two numbers.");
+            Console.WriteLine("\t3. Add THREE numbers.");
             Console.WriteLine("\tN. Create a new Calculator.");
             Console.WriteLine("\tC. Copy Calculator to a new object.");
             Console.WriteLine("\tE. Exit.");
@@ -145,14 +145,14 @@ namespace Calculator
                             ("\n{0} + {1} = {2}", num1, num2, answer);
                         break;
 
-                    case "3":
+                    case "2":
                         GetNumbers(out num1, out num2);
                         answer = calculator.Multiply(num1, num2);
                         Console.WriteLine
                             ("\n{0} * {1} = {2}", num1, num2, answer);
                         break;
 
-                    case "6":
+                    case "3":
                         GetNumbers(out num1, out num2);
                         Console.Write("Please enter your third number: ");
                         int num3 = int.Parse(Console.ReadLine());
